@@ -8,9 +8,9 @@
  */
 
 defined( 'ABSPATH' ) || exit;
-
+define( 'ARRUDA_MEDIA_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 // Plugin update checker
-require_once CAC_AUTH_PLUGIN_DIR . 'includes/plugin-update-checker/plugin-update-checker.php';
+require_once ARRUDA_MEDIA_PLUGIN_DIR . 'includes/plugin-update-checker/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $updateChecker = PucFactory::buildUpdateChecker(
