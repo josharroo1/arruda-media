@@ -9,6 +9,16 @@
 
 defined( 'ABSPATH' ) || exit;
 
+// Plugin update checker
+require_once CAC_AUTH_PLUGIN_DIR . 'includes/plugin-update-checker/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$updateChecker = PucFactory::buildUpdateChecker(
+    'https://raw.githubusercontent.com/josharroo1/arruda-media/main/arruda-media-update.json',
+    __FILE__,
+    'arruda-media'
+);
+
  // Autoload Classes
 spl_autoload_register( function( $class ) {
     $prefix = 'AAC\\';
