@@ -1,0 +1,84 @@
+/* assets/css/admin-styles.css */
+
+.aac-settings-page {
+    max-width: 800px;
+}
+
+.aac-cpt-section,
+.aac-taxonomy-section,
+.aac-meta-field-row {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    padding: 15px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.aac-cpt-section h2,
+.aac-taxonomy-section h3,
+.aac-meta-field-row h2 {
+    margin-top: 0;
+}
+
+.aac-remove-cpt,
+.aac-remove-taxonomy,
+.aac-remove-meta-field {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #a00;
+    background: none;
+    border: none;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.field-group {
+    margin-bottom: 15px;
+}
+
+.field-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.field-group input[type="text"],
+.field-group select,
+.field-group textarea {
+    width: 100%;
+    max-width: 400px;
+}
+
+.label-field {
+    margin-bottom: 10px;
+}
+
+.checkbox-group label {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.required {
+    color: #a00;
+}
+
+.description {
+    font-size: 12px;
+    color: #666;
+}
+
+.aac-taxonomies-container {
+    margin-top: 10px;
+}
+
+.button.aac-add-taxonomy {
+    margin-top: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccd0d4;
+    margin: 20px 0;
+}
