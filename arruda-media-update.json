@@ -1,6 +1,6 @@
 {
     "name": "Arruda Media",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "download_url": "https://github.com/josharroo1/arruda-media/archive/main.zip",
     "sections": {
       "description": "A suite of tools for managing WordPress within Arruda Media."

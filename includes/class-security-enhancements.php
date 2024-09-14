@@ -26,9 +26,9 @@ class Security_Enhancements {
         // Add Security Headers
         add_action( 'send_headers', [ $this, 'add_security_headers' ] );
 
-        // Change Login URL
-        add_action( 'init', [ $this, 'change_login_url' ] );
-        add_action( 'template_redirect', [ $this, 'login_template_redirect' ] );
+        // // Change Login URL
+        // add_action( 'init', [ $this, 'change_login_url' ] );
+        // add_action( 'template_redirect', [ $this, 'login_template_redirect' ] );
 
         // Implement Content Security Policy
         add_action( 'send_headers', [ $this, 'add_csp_header' ] );

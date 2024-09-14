@@ -1,22 +1,41 @@
-/* assets/css/admin-styles.css */
+/* Optimized Admin Styles */
 
 .aac-settings-page {
-    max-width: 800px;
+    max-width: 100%;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin: 35px 35px 10px 10px;
+    box-shadow: 0px 10px 15px -6px rgb(0, 0, 0, 0.2);
+}
+.aac-settings-page h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    background: linear-gradient(to bottom, #7d3f9b, #3a025e);
+    border-radius: 8px;
+    color: white;
+    margin-bottom: 30px;
 }
 
 .aac-cpt-section,
 .aac-taxonomy-section,
-.aac-meta-field-row {
-    background: #fff;
-    border: 1px solid #ccd0d4;
+.aac-meta-field-row,
+.aac-edit-form {
     padding: 15px;
     margin-bottom: 20px;
     position: relative;
+    border-radius: 4px;
+}
+
+.aac-taxonomy-section {
+    background: #f9f9f9;
 }
 
 .aac-cpt-section h2,
 .aac-taxonomy-section h3,
-.aac-meta-field-row h2 {
+.aac-meta-field-row h2,
+.aac-taxonomy-section h4 {
     margin-top: 0;
 }
 
@@ -26,22 +45,34 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    color: #a00;
-    background: none;
+    color: #fff;
+    background-color: #dc3232;
     border: none;
     font-size: 18px;
     line-height: 1;
     cursor: pointer;
 }
 
+.aac-remove-cpt:hover,
+.aac-remove-taxonomy:hover,
+.aac-remove-meta-field:hover {
+    background-color: #a00;
+}
+
 .field-group {
     margin-bottom: 15px;
 }
 
-.field-group label {
+.field-group label,
+.checkbox-group label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
+}
+
+.checkbox-group label {
+    display: inline-block;
+    margin-right: 15px;
 }
 
 .field-group input[type="text"],
@@ -49,15 +80,6 @@
 .field-group textarea {
     width: 100%;
     max-width: 400px;
-}
-
-.label-field {
-    margin-bottom: 10px;
-}
-
-.checkbox-group label {
-    display: inline-block;
-    margin-right: 15px;
 }
 
 .required {
@@ -69,11 +91,8 @@
     color: #666;
 }
 
-.aac-taxonomies-container {
-    margin-top: 10px;
-}
-
-.button.aac-add-taxonomy {
+.aac-taxonomies-container,
+.aac-add-taxonomy {
     margin-top: 10px;
 }
 
@@ -81,4 +100,78 @@ hr {
     border: none;
     border-top: 1px solid #ccd0d4;
     margin: 20px 0;
+}
+
+.aac-post-types-list {
+    margin-bottom: 30px;
+}
+
+.wp-list-table th,
+.wp-list-table td {
+    vertical-align: middle;
+}
+
+.wp-list-table th {
+    width: 30%;
+}
+
+.wp-list-table td {
+    width: 40%;
+}
+
+.button-danger {
+    background-color: #dc3232;
+    border-color: #b21f1f;
+    color: #fff;
+}
+
+.button-danger:hover {
+    background-color: #a00;
+    border-color: #900;
+}
+
+.aac-edit-form .form-table th {
+    width: 20%;
+}
+
+.aac-edit-form .form-table td {
+    width: 80%;
+}
+
+.aac-edit-form td p {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    gap: 3px;
+}
+
+.aac-edit-form td p label {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .wp-list-table th,
+    .wp-list-table td,
+    .aac-edit-form .form-table th,
+    .aac-edit-form .form-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .wp-list-table th,
+    .aac-edit-form .form-table th {
+        background: #f9f9f9;
+        padding: 10px;
+    }
+
+    .wp-list-table td,
+    .aac-edit-form .form-table td {
+        padding: 10px;
+    }
+
+    .button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Arruda Media
  * Description: An enhanced plugin that implements advanced configurations for WordPress sites managed by Arruda Media.
- * Version: 1.0
+ * Version: 1.1
  * Author: Josh Arruda
  * License: GPL2
  */
